@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+
+        <style>
+
+            .body {
+                font-family: "Times New Roman", Times, serif;
+            }
+            
+                           img {
+                width: 100%;
+                background-color: rgb(0, 162, 255);
+                border-radius: 10px 10px 0px 0px;
+            
+            }
+
+            #gallery {
+                display: grid;                
+                grid-gap: 4px;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+
+            #container {
+                max-width: 960px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+        
+
+                .galerija1 {
+                width: 150px;
+                border: solid 0px;               
+            }
+
+            figcaption {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 1024px) {
+                #gallery {
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                #gallery {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin: 0 auto;
+                }
+            }
+
+            @media screen and (max-width: 414px) {
+                #container {
+                    margin: auto auto;
+                }
+                #gallery {
+                    grid-template-columns: 1fr;
+                }
+
+
+                
+
+        </style>
+
+    </head>
+
+
+    <body>
+
+<div id="container">
+        <h1>Gallery Heading</h1>
+
+            <div id="gallery">
+                 <div class="galerija1"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                 <div class="galerija1"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                 <div class="galerija1"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                 <div class="galerija1"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                 <div class="galerija1"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                 <div class="galerija1"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                 <div class="galerija1"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                 <div class="galerija1"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                 <div class="galerija1"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                 <div class="galerija1"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+            </div>
+
+            <div id="p">            
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+</div>
+
+    </body>
+
+
+
+
+</html>
